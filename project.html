@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizone Privet Limited</title>
+    <link rel="icon" type="image/x-icon" href="https://www.bernsteiner.at/wp-content/uploads/logos/Favicon.png">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        
+    
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.hero {
+  height: 100vh;
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #df974e;
+}
+
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+#contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+    </style>
+</head>
+<body>
+     <script>
+      
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Smooth scrolling for navbar links
+  document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+ 
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      alert('Your message has been sent!');
+      document.getElementById('contact-form').reset();
+  });
+});
+
+     </script>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mobiles Accessories</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero d-flex align-items-center" style="background-color: rgb(228, 228, 178);">
+        <div class="container text-center text-white">
+            <h1 style="color: rgb(137, 6, 6);">Horizone Mobiles And Accessories</h1>
+            <p style="background-color: rgb(169, 191, 136);color: black;">We provide top-quality services and best products to our clients.</p>
+        </div>
+    </section>
+
+    
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Screen Quard Replacement </h5>
+                            <p class="card-text"><ul><li>Top-quality Item</li>
+                                                     <li>privacy glasses</li></ul></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Display Changing</h5>
+                            <p class="card-text"><ul><li>Avileble for Every models</li>
+                                                     <li>Quality instaletion</li></ul></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Body Altretion</h5>
+                            <p class="card-text"><ul><li>Top Primium Quality Covers</li>
+                                                     <li>Skin/Body Polishing</li></ul></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Team</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Member 1</h5>
+                            <h6 class="card-title">Specielist</h6>
+                            <p class="card-text"> Ashure the Screen size <br>Screan helth </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Member 2</h5>
+                            <h6 class="card-title">Specielist</h6>
+                            <p class="card-text">Main Mobile Service Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Member 3</h5>
+                            <h6 class="card-title">Costomer Exicutive</h6>
+                            <p class="card-text">Costomer Support <br> Sales Maintance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Business Name. All Rights Reserved.</p>
+    </footer>
+
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
